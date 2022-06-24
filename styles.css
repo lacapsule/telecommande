@@ -5,7 +5,7 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: rgb(2,0,36);
+    background-color: rgb(2,0,36);
     background: -moz-linear-gradient(7deg, rgba(2,0,36,1) 7%, rgba(9,9,121,1) 18%, rgba(0,212,255,1) 100%);
     background: -webkit-linear-gradient(7deg, rgba(2,0,36,1) 7%, rgba(9,9,121,1) 18%, rgba(0,212,255,1) 100%);
     background: linear-gradient(7deg, rgba(2,0,36,1) 7%, rgba(9,9,121,1) 18%, rgba(0,212,255,1) 100%);
@@ -105,7 +105,7 @@ img[src="down.png"] {
 img {
     transition: 0.3s ease-in-out;
 }
-img:active {
+img:active:not(img[src="power.png"]) {
     transform: scale(0.9);
     filter: contrast(0.8);
 }
@@ -157,7 +157,4 @@ section:nth-child(3) {
     font-weight: bold;
     line-height: 5em;
     font-size: 8px;
-}
-p {
-    border: 1px solid black;
 }
